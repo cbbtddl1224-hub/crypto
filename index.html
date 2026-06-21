@@ -358,7 +358,7 @@ fetch("https://api.binance.com/api/v3/ticker/24hr")
 
     const usdt = data.filter(x=>x.symbol.endsWith("USDT"));
 
-    usdt.slice(0,80).forEach(item=>{
+    usdt.forEach(item=>{
 
         const symbol = item.symbol.replace("USDT","");
 
